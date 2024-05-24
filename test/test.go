@@ -22,6 +22,9 @@ type Genres struct {
 }
 
 func main() {
+
+	fmt.Println("Connecting to the website!...")
+	
 	resp, err := http.Get("https://www.webtoons.com/en/genres/")
 	if err != nil {
 		fmt.Println("Error fetching WEBTOON homepage: ", err)
